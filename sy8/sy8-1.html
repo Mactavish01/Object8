@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy8-1</title>
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	form{
+		background-color: rgb(81,81,81);
+		width: 600px;
+		height: 840px;
+		margin: 0 auto;
+	}
+	td{
+		height: 50px;
+	}
+	.first{
+		width: 95px;
+	}
+	.second{
+		width: 180px;
+	}
+	.third{
+		width: 50px;
+	}
+	[type="text"]{
+		width: 140px;
+		height: 25px;
+	}
+	h2{
+		text-align: center;
+		margin-top:
+	}
+	fieldset{
+		width: 520px;
+		padding: 20px;
+		margin-bottom: 25px;
+		margin-left: 18px;
+	}
+	select{
+		width: 170px;
+		height: 25px;
+	}
+	h2,legend,td{
+		color: #EEE;
+	}
+	[type="button"]{
+		width: 50px;
+		height: 25px;
+	}
+	.button{
+		display: inline-block;
+		position: relative;
+		left: 40%;
+		margin-bottom: 70px;
+	}
+</style>
+</head>
+
+<body>
+<form>
+	<h2>增加快递信息</h2>
+	<fieldset>
+		<legend>发货单</legend>
+		<table>
+			<tbody>
+				<tr>
+					<td class="first">发货人：</td>
+					<td class="second">
+						<input type="text" name="shipper">
+					</td>
+					<td class="first">地址：</td>
+					<td class="second">
+						<input type="text" name="address">
+					</td>
+				</tr>
+				<tr>
+					<td class="first">电话：</td>
+					<td class="second">
+						<input type="text" name="telephone">
+					</td>
+					<td class="first">邮编：</td>
+					<td class="second">
+						<input type="text" name="postcodes">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend>收货单</legend>
+		<table>
+			<tbody>
+				<tr>
+					<td class="first">收货人：</td>
+					<td class="second">
+						<input type="text" name="shipper">
+					</td>
+					<td class="first">地址：</td>
+					<td class="second">
+						<input type="text" name="address">
+					</td>
+				</tr>
+				<tr>
+					<td class="first">电话：</td>
+					<td class="second">
+						<input type="text" name="telephone">
+					</td>
+					<td class="first">邮编：</td>
+					<td class="second">
+						<input type="text" name="postcodes">
+					</td>
+				</tr>
+				<tr>
+					<td class="first">地区：</td>
+					<td colspan="3">
+						<select>
+							<option value="bj" selected>北京</option>
+							<option value="sh">上海</option>
+							<option value="tj">天津</option>
+							<option value="cq">重庆</option>
+							<option value="gd">广东</option>
+							<option value="hb">河北</option>
+							<option value="sx">山西</option>
+							<option value="shx">陕西</option>
+							<option value="ln">辽宁</option>
+							<option value="jl">吉林</option>
+							<option value="hlj">黑龙江</option>
+							<option value="js">江苏</option>
+							<option value="zj">浙江</option>
+							<option value="ah">安徽</option>
+							<option value="fj">福建</option>
+							<option value="jx">江西</option>
+							<option value="sd">山东</option>
+							<option value="hn">河南</option>
+							<option value="hb">河北</option>
+							<option value="hn">湖南</option>
+							<option value="hain">海南</option>
+							<option value="sc">四川</option>
+							<option value="gz">贵州</option>
+							<option value="yn">云南</option>
+							<option value="gs">甘肃</option>
+							<option value="qh">青海</option>
+							<option value="tw">台湾</option>
+							<option value="nm">内蒙古</option>
+							<option value="gx">广西</option>
+							<option value="xz">西藏</option>
+							<option value="nx">宁夏</option>
+							<option value="xj">新疆</option>
+							<option value="xg">香港</option>
+							<option value="am">澳门</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="first">包装：</td>
+					<td colspan="3">
+						<input type="checkbox" name="pak" value="paperbox">
+						纸箱
+						<input type="checkbox" name="pak" value="woodbox">
+						木箱
+						<input type="checkbox" name="pak" value="bag">
+						快递袋
+						<input type="checkbox" name="pak" value="other">
+						其他
+					</td>
+				</tr>
+				<tr>
+					<td class="first">付款方式：</td>
+					<td colspan="3">
+						<input type="radio" name="pay" value="cash">
+						现金
+						<input type="radio" name="pay" value="alipay">
+						支付宝
+						<input type="radio" name="pay" value="ebank">
+						网银
+						<input type="radio" name="pay" value="atm">
+						ATM
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend>货物信息</legend>
+		<table>
+			<tbody>
+				<tr>
+					<td class="first">货物名称：</td>
+					<td colspan="3">
+						<input type="text" name="name" style="width: 400px">
+					</td>
+				</tr>
+				<tr>
+					<td class="first">数量：</td>
+					<td class="second">
+						<input type="text" name="number">
+					</td>
+					<td class="first">重量：</td>
+					<td class="second">
+						<input type="text" name="weight">
+					</td>
+
+				</tr>
+			</tbody>
+		</table>
+	</fieldset>
+	<div class="button">
+		<input type="button" name="yes" value="确定">
+		<input type="button" name="no" value="取消">
+	</div>
+</form>
+</body>
+</html>
